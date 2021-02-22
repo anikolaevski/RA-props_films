@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/RA-props_films/static/css/main.dac49a96.chunk.css",
+    "main.js": "/RA-props_films/static/js/main.be0c6a83.chunk.js",
+    "main.js.map": "/RA-props_films/static/js/main.be0c6a83.chunk.js.map",
+    "runtime-main.js": "/RA-props_films/static/js/runtime-main.1fd91f1f.js",
+    "runtime-main.js.map": "/RA-props_films/static/js/runtime-main.1fd91f1f.js.map",
+    "static/js/2.df89e9b6.chunk.js": "/RA-props_films/static/js/2.df89e9b6.chunk.js",
+    "static/js/2.df89e9b6.chunk.js.map": "/RA-props_films/static/js/2.df89e9b6.chunk.js.map",
+    "index.html": "/RA-props_films/index.html",
+    "static/css/main.dac49a96.chunk.css.map": "/RA-props_films/static/css/main.dac49a96.chunk.css.map",
+    "static/js/2.df89e9b6.chunk.js.LICENSE.txt": "/RA-props_films/static/js/2.df89e9b6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1fd91f1f.js",
+    "static/js/2.df89e9b6.chunk.js",
+    "static/css/main.dac49a96.chunk.css",
+    "static/js/main.be0c6a83.chunk.js"
+  ]
+}
