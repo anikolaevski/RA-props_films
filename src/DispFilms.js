@@ -8,15 +8,14 @@ export class DispFilms extends React.Component {
   };
   constructor(props) {
     super(props);
-    this.films = props.films.map( film => ({id: shortid.generate(), value: film }));
   }
   render () {
-    // console.log(this.films);
+    const films = this.props.films.map( film => ({id: shortid.generate(), value: film }));
     return (
       <div className='movie-info'>
         <h2>My Super Puper Movie Rating</h2>
         <ul>
-          {this.films.map( o => <ShowMovieInformation key={o.id} film={o.value} />)}
+          {films.map( o => <ShowMovieInformation key={o.id} film={o.value} />)}
         </ul>
       </div>
     );
@@ -29,19 +28,19 @@ class ShowMovieInformation extends React.Component {
   };
   constructor(props) {
     super(props);
-    this.name = props.film.name;
-    this.stars = parseInt(props.film.stars, 10);
   }
   render() {
-    if (this.stars >= 1 && this.stars <= 5) {
+    const name = this.props.film.name;
+    const stars = parseInt(this.props.film.stars, 10);
+    if (stars >= 1 && stars <= 5) {
       return ( 
-        <li>{this.name} 
-          <Stars count={this.stars} />
+        <li>{name} 
+          <Stars count={stars} />
         </li>
       );
     } else {
       /* eslint-disable-next-line no-undef */
-      console.log(`Movie "${this.name}" has rating "${this.stars}" which is out of range`);
+      console.log(`Movie "${name}" has rating "${stars}" which is out of range`);
       return ('');
     }
   }
